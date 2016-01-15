@@ -13,43 +13,125 @@
         <h1>Welcome to our easy vacation guide!</h1>
         <h3>Just fill out the questions, click the button, and we'll tell you where to vacation to!</h3>
         <form id="vacqs">
+          <h4>What are you looking for in a vacation?</h4>
           <div id="qgoals">
-            <label for="goals">What are you looking for in a vacation?</label>
-            <select id="goals">
-              <option value="goals1">I want to get into nature</option>
-              <option value="goals2">I want to relax</option>
-              <option value="goals3">I want to party and live it up!</option>
-              <option value="goals4">I want to challenge myself</option>
-              <option value="goals5">I want out of this world adventure!</option>
-              <option value="goals6">I want to soak up culture</option>
-            </select>
+            <div class="radio" >
+              <label>
+                <input type="radio" name="goalsradio" id="goals1" value="goals1">
+                I want to get into nature
+              </label>
+            </div>
+            <div class="radio" >
+              <label>
+                <input type="radio" name="goalsradio" id="goals2" value="goals2">
+                I want to relax
+              </label>
+            </div>
+            <div class="radio" >
+              <label>
+                <input type="radio" name="goalsradio" id="goals3" value="goals3">
+                I want to party and live it up!
+              </label>
+            </div>
+            <div class="radio" >
+              <label>
+                <input type="radio" name="goalsradio" id="goals4" value="goals4">
+                I want to push myself to my limits!
+              </label>
+            </div>
+            <div class="radio" >
+              <label>
+                <input type="radio" name="goalsradio" id="goals5" value="goals5">
+                I want out of this world adventure!
+              </label>
+            </div>
+            <div class="radio" >
+              <label>
+                <input type="radio" name="goalsradio" id="goals6" value="goals6">
+                I want to soak up culture
+              </label>
+            </div>
           </div>
+          <h4>How much are you able to spend?</h4>
           <div id="qspend">
-            <label for="spend">How much are you able to spend?</label>
-            <select id="spend">
-              <option value="spend1">I need something frugal</option>
-              <option value="spend2">I've got some money saved</option>
-              <option value="spend3">I can spend freely. I just want a nice trip</option>
-              <option value="spend4">Give me your most extravagant options!</option>
-              </select>
+            <div class="radio" >
+              <label>
+                <input type="radio" name="spendradio" id="spend1" value="spend1">
+                I need something frugal
+              </label>
+            </div>
+            <div class="radio" >
+              <label>
+                <input type="radio" name="spendradio" id="spend2" value="spend2">
+                I've got some money saved
+              </label>
+            </div>
+            <div class="radio" >
+              <label>
+                <input type="radio" name="spendradio" id="spend3" value="spend3">
+                I can spend freely. I want to have a good trip
+              </label>
+            </div>
+            <div class="radio" >
+              <label>
+                <input type="radio" name="spendradio" id="spend4" value="spend4">
+                I want your most extravagant options
+              </label>
+            </div>
           </div>
+          <h4>What's your drink of choice?</h4>
           <div id="qdrink">
-            <label for="drink">What's your drink of choice?</label>
-            <select id="drink">
-              <option value="drink1">This one time I stopped at this lovely chauteau on the Rhone and...</option>
-              <option value="drink2">Soylent</option>
-              <option value="drink3">Anything served in a coconut with an umbrella</option>
-              <option value="drink4">Kombucha</option>
-              <option value="drink5">Shots!</option>
-            </select>
+            <div class="radio" >
+              <label>
+                <input type="radio" name="drinkradio" id="drink1" value="drink1">
+                This one time I stopped at this lovely chauteau on the Rhone and...
+              </label>
+            </div>
+            <div class="radio" >
+              <label>
+                <input type="radio" name="drinkradio" id="drink2" value="drink2">
+                Soylent
+              </label>
+            </div>
+            <div class="radio" >
+              <label>
+                <input type="radio" name="drinkradio" id="drink3" value="drink3">
+                Anything served in a coconut with an umbrella
+              </label>
+            </div>
+            <div class="radio" >
+              <label>
+                <input type="radio" name="drinkradio" id="drink4" value="drink4">
+                Kombucha
+              </label>
+            </div>
+            <div class="radio" >
+              <label>
+                <input type="radio" name="drinkradio" id="drink5" value="drink5">
+                Shots! Shots! Shots! Shots!
+              </label>
+            </div>
           </div>
+          <h4>How important to you is a unique vacation location?</h4>
           <div id="qunique">
-            <label for="unique">How important to you is a unique vacation location?</label>
-            <select id="unique">
-              <option value="unique1">Very!</option>
-              <option value="unique2">It'd be nice, but other considerations are more important</option>
-              <option value="unique3">Who cares? I just want to have fun</option>
-            </select>
+            <div class="radio" >
+              <label>
+                <input type="radio" name="uniqueradio" id="unique1" value="unique1">
+                Very!
+              </label>
+            </div>
+            <div class="radio" >
+              <label>
+                <input type="radio" name="uniqueradio" id="unique2" value="unique2">
+                It'd be nice, but other considerations are more important
+              </label>
+            </div>
+            <div class="radio" >
+              <label>
+                <input type="radio" name="uniqueradio" id="unique3" value="unique3">
+                Who cares? I just want to have fun
+              </label>
+            </div>
           </div>
           <div class="qage">
             <h4>How old are you?</h4>
@@ -92,138 +174,3 @@
     </div>
   </body>
 </html>
-
-<!-- <label for="goals">What are you looking for in a vacation?</label>
-<select id="goals">
-  <option value="goals1">I want to get into nature</option>
-  <option value="goals2">I want to relax</option>
-  <option value="goals3">I want to party and live it up</option>
-  <option value="goals4">I want to challenge myself</option>
-  <option value="goals5">I want something completely new</option>
-  <option value="goals6">I want to soak up culture</option>
-</select> -->
-
-<!-- <div class="qpage">
- <h1>Welcome to our easy vacation guide!</h1>
- <h3>Just fill out the questions, click the button, and we'll tell you where to vacation to!</h3>
- <form id="#vacqs">
-   <div class="qgoals">
-     <h4>What are you looking for in a vacation?</h4>
-     <div class="radio">
-       <label>
-         <input type="radio" class="goals" id="goals1" value="goals1">
-         I want to get into nature
-       </label>
-     </div>
-     <div class="radio">
-       <label>
-         <input type="radio" class="goals" id="goals2" value="goals2">
-         I want to relax
-       </label>
-     </div>
-     <div class="radio">
-       <label>
-         <input type="radio" class="goals" id="goals3" value="goals3">
-         I want to party and live it up
-       </label>
-     </div>
-     <div class="radio">
-       <label>
-         <input type="radio" class="goals" id="goals4" value="goals4">
-         I want to challenge myself personally
-       </label>
-     </div>
-     <div class="radio">
-       <label>
-         <input type="radio" class="goals" id="goals5" value="goals5">
-         I want to do something completely new
-       </label>
-     </div>
-     <div class="radio">
-       <label>
-         <input type="radio" class="goals" id="goals6" value="goals6">
-         I want to soak up culture.
-       </label>
-     </div>
-   </div>
-   <div class="qspend">
-     <h4>How much are you able to spend?</h4>
-     <div class="radio">
-       <label>
-         <input type="radio" class="spend" id="spend1" value="spend1">
-         I need something frugal
-       </label>
-     </div>
-     <div class="radio">
-       <label>
-         <input type="radio" class="spend" id="spend2" value="spend2">
-         I've got some money saved
-       </label>
-     </div>
-     <div class="radio">
-       <label>
-         <input type="radio" class="spend" id="spend3" value="spend3">
-         I can spend freely. I just want a nice trip
-       </label>
-     </div>
-     <div class="radio">
-       <label>
-         <input type="radio" class="spend" id="spend4" value="spend4">
-         Give me your most extravagant options!
-       </label>
-     </div>
-   </div>
-   <div class="qdrink">
-     <h4>What's your drink of choice?</h4>
-     <div class="radio">
-       <label>
-         <input type="radio" class="drink" id="drink1" value="drink1">
-         This one time I stopped at this lovely chauteau on the Rhone and...
-       </label>
-     </div>
-     <div class="radio">
-       <label>
-         <input type="radio" class="drink" id="drink2" value="drink2">
-         Soylent
-       </label>
-     </div>
-     <div class="radio">
-       <label>
-         <input type="radio" class="drink" id="drink3" value="drink3">
-         Anything served in a coconut with an umbrella
-       </label>
-     </div>
-     <div class="radio">
-       <label>
-         <input type="radio" class="drink" id="drink4" value="drink4">
-         Kombucha
-       </label>
-     </div>
-     <div class="radio">
-       <label>
-         <input type="radio" class="drink" id="drink5" value="drink5">
-         Shots!
-       </label>
-     </div>
-   </div>
-   <div class="qunique">
-     <h4>How important to you is a unique vacation location?</h4>
-     <div class="radio">
-       <label>
-         <input type="radio" class="unique" id="unique1" value="unique1">
-         Very!
-       </label>
-     </div>
-     <div class="radio">
-       <label>
-         <input type="radio" class="unique" id="unique2" value="unique2">
-         It'd be nice, but other considerations are more important
-       </label>
-     </div>
-     <div class="radio">
-       <label>
-         <input type="radio" class="unique" id="unique3" value="unique3">
-         Who cares? I just want to have fun
-       </label>
-     </div>
-   </div> -->

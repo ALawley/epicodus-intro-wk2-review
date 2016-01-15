@@ -9,7 +9,7 @@ $(document).ready(function() {
     // Begin question evaluation code
 
     // Q1
-    var goals = $("select#goals").val();
+    var goals = $('input:radio[name="goalsradio"]:checked').val();
     if (goals === "goals1") {
       pct +=2
       fiji +=1
@@ -26,10 +26,11 @@ $(document).ready(function() {
       mars +=2
     } else if (goals === "goals6") {
       florence +=2
-    } else { alert("We're sorry, something went wrong. Please answer the first question.");
+    } else {
+      alert("We're sorry, something went wrong. Please answer the first question.");
     }
     // Q2
-    var spend = $("select#spend").val();
+    var spend = $('input:radio[name="spendradio"]:checked').val();
     if (spend === "spend1") {
       pct +=2
       mars -=2
@@ -43,10 +44,11 @@ $(document).ready(function() {
     } else if (spend === "spend4") {
       mars +=2
       vegas +=1
-    } else { alert("We're sorry, something went wrong. Please answer the second question.");
+    } else {
+      alert("We're sorry, something went wrong. Please answer the second question.");
     }
     // Q3
-    var drink = $("select#drink").val();
+    var drink = $('input:radio[name="drinkradio"]:checked').val();
     if (drink === "drink1") {
       florence +=2
     } else if (drink === "drink2") {
@@ -57,10 +59,11 @@ $(document).ready(function() {
       pct +=1
     } else if (drink === "drink5") {
       vegas +=2
-    } else { alert("We're sorry, something went wrong. Please refresh and answer the third question.");
+    } else {
+      alert("We're sorry, something went wrong. Please refresh and answer the third question.");
     }
     // Q4
-    var unique = $("select#unique").val();
+    var unique = $('input:radio[name="uniqueradio"]:checked').val();
     if (unique === "unique1") {
       mars += 2
       pct += 1
@@ -70,9 +73,10 @@ $(document).ready(function() {
     } else if (unique === "unique3") {
       vegas +=1
       mars -=2
-    } else { alert("We're sorry, something went wrong. Please refresh and answer the fourth question.");
+    } else {
+      alert("We're sorry, something went wrong. Please refresh and answer the fourth question.");
     }
-    //Q5
+    // Q5
     var age = parseInt($("input#age").val());
     if (age <= 35) {
         pct +=1
@@ -85,9 +89,7 @@ $(document).ready(function() {
     if (age <21 && age >=18) {
       vegas -=4
     } else {
-      vegas +=1
     }
-    // end question evaluation code
 
     // begin show results code
     if (florence >= fiji && florence >= vegas && florence >= pct && florence >= mars) {
