@@ -6,9 +6,9 @@ $(document).ready(function() {
   var mars = 0
   var age = parseInt($("input#age").val());
 
-  // Begin question evaluation code
-  // Q1
   $(".qpage form").submit(function(event) {
+    // Begin question evaluation code
+    // Q1
     var goals = $("input.goals").val();
     if (goals === "goals1") {
       pct +=2
@@ -71,21 +71,46 @@ $(document).ready(function() {
     } else { alert("We're sorry, something went wrong. Please refresh and answer the fourth question.");
     }
     //Q5
-    if (age < 18) {
-      $(".Minor").show();
-    } else if {
-      (age <= 35) {
-        pct +=1
-        vegas +=1
-        mars +=1
-      }
+    // if (age < 18) {
+    //   $(".minor").show();
+    // } else if {
+    //   (age <= 35) {
+    //     pct +=1
+    //     vegas +=1
+    //     mars +=1
+    //   }
+    // } else {
+    //   florence +=1
+    //   fiji +=1
+    // }
+    // if (age <21 && age >=18) {
+    //   vegas -=4
+    // } else {}
+    // end question evaluation code
+
+    // begin show results code
+    if (florence >= fiji && florence >= vegas && florence >= pct && florence >= mars) {
+      $(".qpage").hide();
+      $(".results").show();
+      $(".florence").show();
+    } else if (fiji > florence && fiji >= vegas && fiji >= pct && fiji >= mars) {
+      $(".qpage").hide();
+      $(".results").show();
+      $(".fiji").show();
+    } else if (vegas > florence && vegas > fiji && vegas >= pct && vegas >= mars) {
+      $(".qpage").hide();
+      $(".results").show();
+      $(".vegas").show();
+    } else if (pct > florence && pct > fiji && pct > vegas && pct >= mars) {
+      $(".qpage").hide();
+      $(".results").show();
+      $(".pct").show();
     } else {
-      florence +=1
-      fiji +=1
+      $(".qpage").hide();
+      $(".results").show();
+      $(".mars").show();
     }
-    if (age <21 && age >=18) {
-      vegas -=4
-    }
+    // end show results code
     event.preventDefault();
   });
 });
