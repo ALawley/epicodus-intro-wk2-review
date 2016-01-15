@@ -139,4 +139,16 @@ $(document).ready(function() {
     // end show results code
     event.preventDefault();
   });
+  $("button.return").click(function(event) {
+    $(".results").hide();
+    $(".florence").hide();
+    $(".fiji").hide();
+    $(".vegas").hide();
+    $(".pct").hide();
+    $(".mars").hide();
+    $(".minor").hide();
+    $(".qpage").show();
+
+    event.preventDefault();
+  });
 });
