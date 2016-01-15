@@ -1,3 +1,51 @@
 .results, .pct, .florence, .vegas, .fiji, .mars, .minor {
   display: none;
 }
+
+body {
+  background-color: #B0CED8;
+  text-align: justify;
+}
+
+img {
+  width: 75%
+  height: auto;
+}
+
+button {
+  margin: 10px;
+}
+
+label {
+  font-size: 1.2em;
+}
+
+.radio label {
+  margin-left: 15px;
+}
+
+h4 {
+  font-style: italic;
+  font-size: 1.75em;
+}
+
+h3 {
+  font-size: 1.8em;
+  font-weight: bolder;
+}
+
+p {
+  width: 70%;
+  font-size: 1.2em;
+}
+
+h5 {
+  font-style: italic;
+  font-size: 1.4em;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+hr {
+  border: 1px solid black;
+}
