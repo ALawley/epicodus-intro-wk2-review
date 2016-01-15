@@ -28,6 +28,7 @@ $(document).ready(function() {
       florence +=2
     } else {
       alert("We're sorry, something went wrong. Please answer the first question.");
+      return;
     }
     // Q2
     var spend = $('input:radio[name="spendradio"]:checked').val();
@@ -46,6 +47,7 @@ $(document).ready(function() {
       vegas +=1
     } else {
       alert("We're sorry, something went wrong. Please answer the second question.");
+      return;
     }
     // Q3
     var drink = $('input:radio[name="drinkradio"]:checked').val();
@@ -61,6 +63,7 @@ $(document).ready(function() {
       vegas +=2
     } else {
       alert("We're sorry, something went wrong. Please refresh and answer the third question.");
+      return;
     }
     // Q4
     var unique = $('input:radio[name="uniqueradio"]:checked').val();
@@ -75,6 +78,7 @@ $(document).ready(function() {
       mars -=2
     } else {
       alert("We're sorry, something went wrong. Please refresh and answer the fourth question.");
+      return;
     }
     // Q5
     var age = parseInt($("input#age").val());
