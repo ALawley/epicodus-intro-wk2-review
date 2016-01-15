@@ -3,7 +3,7 @@
   <head>
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <script src="js/jquery-1.12.0.min.js"></script>
+    <script src="js/jquery-1.12.0.js"></script>
     <script src="js/scripts.js"></script>
     <title>Vacation Guide</title>
   </head>
@@ -12,69 +12,69 @@
       <div class="qpage">
         <h1>Welcome to our easy vacation guide!</h1>
         <h3>Just fill out the questions, click the button, and we'll tell you where to vacation to!</h3>
-        <form>
+        <form id="#vacqs">
           <div class="qgoals">
             <h4>What are you looking for in a vacation?</h4>
-            <div class="checkbox">
+            <div class="radio">
               <label>
-                <input type="checkbox" value="q1nature">
+                <input type="radio" class="goals" id="goals1" value="goals1">
                 I want to get into nature
               </label>
             </div>
-            <div class="checkbox">
+            <div class="radio">
               <label>
-                <input type="checkbox" value="q1relax" disabled>
+                <input type="radio" class="goals" id="goals2" value="goals2">
                 I want to relax
               </label>
             </div>
-            <div class="checkbox">
+            <div class="radio">
               <label>
-                <input type="checkbox" value="q1party">
-                I want to party and get wild
+                <input type="radio" class="goals" id="goals3" value="goals3">
+                I want to party and live it up
               </label>
             </div>
-            <div class="checkbox">
+            <div class="radio">
               <label>
-                <input type="checkbox" value="q1challenge">
-                I want to challenge myself
+                <input type="radio" class="goals" id="goals4" value="goals4">
+                I want to challenge myself personally
               </label>
             </div>
-            <div class="checkbox">
+            <div class="radio">
               <label>
-                <input type="checkbox" value="q1novelty">
+                <input type="radio" class="goals" id="goals5" value="goals5">
                 I want to do something completely new
               </label>
             </div>
-            <div class="checkbox">
+            <div class="radio">
               <label>
-                <input type="checkbox" value="q1culture">
-                I want to soak up culture
+                <input type="radio" class="goals" id="goals6" value="goals6">
+                I want to soak up culture.
               </label>
             </div>
           </div>
           <div class="qspend">
-            <h4>How much are you looking to spend?</h4>
+            <h4>How much are you able to spend?</h4>
             <div class="radio">
               <label>
-                <input type="radio" name="qspend" id="qspend1" value="qspend1">
+                <input type="radio" class="spend" id="spend1" value="spend1">
                 I need something frugal
               </label>
             </div>
             <div class="radio">
               <label>
-                <input type="radio" name="qspend" id="qspend2" value="qspend2">
+                <input type="radio" class="spend" id="spend2" value="spend2">
                 I've got some money saved
               </label>
             </div>
             <div class="radio">
               <label>
-                <input type="radio" name="qspend" id="qspend3" value="qspend3">
+                <input type="radio" class="spend" id="spend3" value="spend3">
                 I can spend freely. I just want a nice trip
               </label>
             </div>
             <div class="radio">
               <label>
-                <input type="radio" name="qspend" id="qspend4" value="qspend4">
+                <input type="radio" class="spend" id="spend4" value="spend4">
                 Give me your most extravagant options!
               </label>
             </div>
@@ -83,31 +83,31 @@
             <h4>What's your drink of choice?</h4>
             <div class="radio">
               <label>
-                <input type="radio" name="qdrink" id="qdrink1" value="qdrink1">
+                <input type="radio" class="drink" id="drink1" value="drink1">
                 This one time I stopped at this lovely chauteau on the Rhone and...
               </label>
             </div>
             <div class="radio">
               <label>
-                <input type="radio" name="qdrink" id="qdrink2" value="qdrink2">
+                <input type="radio" class="drink" id="drink2" value="drink2">
                 Soylent
               </label>
             </div>
             <div class="radio">
               <label>
-                <input type="radio" name="qdrink" id="qdrink3" value="qdrink3">
+                <input type="radio" class="drink" id="drink3" value="drink3">
                 Anything served in a coconut with an umbrella
               </label>
             </div>
             <div class="radio">
               <label>
-                <input type="radio" name="qspend" id="qspend4" value="qspend4">
+                <input type="radio" class="drink" id="drink4" value="drink4">
                 Kombucha
               </label>
             </div>
             <div class="radio">
               <label>
-                <input type="radio" name="qspend" id="qspend5" value="qspend5">
+                <input type="radio" class="drink" id="drink5" value="drink5">
                 Shots!
               </label>
             </div>
@@ -116,20 +116,20 @@
             <h4>How important to you is a unique vacation location?</h4>
             <div class="radio">
               <label>
-                <input type="radio" name="qunique" id="qunique1" value="qunique1">
+                <input type="radio" class="unique" id="unique1" value="unique1">
                 Very!
               </label>
             </div>
             <div class="radio">
               <label>
-                <input type="radio" name="qunique" id="qunique2" value="qunique2">
-                It'd be nice, but other things are more important
+                <input type="radio" class="unique" id="unique2" value="unique2">
+                It'd be nice, but other considerations are more important
               </label>
             </div>
             <div class="radio">
               <label>
-                <input type="radio" name="qunique" id="qunique3" value="qunique3">
-                Who cares? I just want to have fun.
+                <input type="radio" class="unique" id="unique3" value="unique3">
+                Who cares? I just want to have fun
               </label>
             </div>
           </div>
@@ -174,3 +174,13 @@
     </div>
   </body>
 </html>
+
+<!-- <label for="goals">What are you looking for in a vacation?</label>
+<select id="goals">
+  <option value="goals1">I want to get into nature</option>
+  <option value="goals2">I want to relax</option>
+  <option value="goals3">I want to party and live it up</option>
+  <option value="goals4">I want to challenge myself</option>
+  <option value="goals5">I want something completely new</option>
+  <option value="goals6">I want to soak up culture</option>
+</select> -->
