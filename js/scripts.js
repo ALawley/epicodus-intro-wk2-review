@@ -9,7 +9,12 @@ $(document).ready(function() {
   $(".qpage form").submit(function(event) {
     // Begin question evaluation code
     // Q1
-    var goals = $("input.goals").val();
+    alert("start pct = " + pct);
+    alert("start florence = " + florence);
+    alert("start vegas = " + vegas);
+    alert("start fiji = " + fiji);
+    alert("start mars = " + mars);
+    var goals = $("select#goals").val();
     if (goals === "goals1") {
       pct +=2
       fiji +=1
@@ -26,8 +31,14 @@ $(document).ready(function() {
       florence +=2
     } else { alert("We're sorry, something went wrong. Please answer the first question.");
     }
+    alert("q1 answer = " + goals);
+    alert("q1 pct = " + pct);
+    alert("q1 florence = " + florence);
+    alert("q1 vegas = " + vegas);
+    alert("q1 fiji = " + fiji);
+    alert("q1 mars = " + mars);
     // Q2
-    var spend = $("input.spend").val();
+    var spend = $("select#spend").val();
     if (spend === "spend1") {
       pct +=2
       mars -=2
@@ -43,8 +54,14 @@ $(document).ready(function() {
       vegas +=1
     } else { alert("We're sorry, something went wrong. Please answer the second question.");
     }
+    alert("q2 answer = " + spend);
+    alert("q2 pct = " + pct);
+    alert("q2 florence = " + florence);
+    alert("q2 vegas = " + vegas);
+    alert("q2 fiji = " + fiji);
+    alert("q2 mars = " + mars);
     // Q3
-    var drink = $("input.drink").val();
+    var drink = $("select#drink").val();
     if (drink === "drink1") {
       florence +=2
     } else if (drink === "drink2") {
@@ -57,8 +74,14 @@ $(document).ready(function() {
       vegas +=2
     } else { alert("We're sorry, something went wrong. Please refresh and answer the third question.");
     }
+    alert("q3 answer = " + drink);
+    alert("q3 pct = " + pct);
+    alert("q3 florence = " + florence);
+    alert("q3 vegas = " + vegas);
+    alert("q3 fiji = " + fiji);
+    alert("q3 mars = " + mars);
     // Q4
-    var unique = $("input.unique").val();
+    var unique = $("select#unique").val();
     if (unique === "unique1") {
       mars += 2
       pct += 1
@@ -70,6 +93,12 @@ $(document).ready(function() {
       mars -=2
     } else { alert("We're sorry, something went wrong. Please refresh and answer the fourth question.");
     }
+    alert("q4 answer = " + unique);
+    alert("q4 pct = " + pct);
+    alert("q4 florence = " + florence);
+    alert("q4 vegas = " + vegas);
+    alert("q4 fiji = " + fiji);
+    alert("q4 mars = " + mars);
     //Q5
     // if (age < 18) {
     //   $(".minor").show();
@@ -87,6 +116,11 @@ $(document).ready(function() {
     //   vegas -=4
     // } else {}
     // end question evaluation code
+    alert("pct = " + pct);
+    alert("florence = " + florence);
+    alert("vegas = " + vegas);
+    alert("fiji = " + fiji);
+    alert("mars = " + mars);
 
     // begin show results code
     if (florence >= fiji && florence >= vegas && florence >= pct && florence >= mars) {
