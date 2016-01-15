@@ -62,7 +62,7 @@ $(document).ready(function() {
     } else if (drink === "drink5") {
       vegas +=2
     } else {
-      alert("We're sorry, something went wrong. Please refresh and answer the third question.");
+      alert("We're sorry, something went wrong. Please answer the third question.");
       return;
     }
     // Q4
@@ -77,23 +77,27 @@ $(document).ready(function() {
       vegas +=1
       mars -=2
     } else {
-      alert("We're sorry, something went wrong. Please refresh and answer the fourth question.");
+      alert("We're sorry, something went wrong. Please answer the fourth question.");
       return;
     }
     // Q5
     var age = parseInt($("input#age").val());
+    if (isNaN(age)) {
+      alert("We're sorry, something went wrong. Please input your age");
+      return;
+    }
     if (age <= 35) {
         pct +=1
         vegas +=1
         mars +=1
-    } else {
+    } else if (age > 35) {
       florence +=1
       fiji +=1
-    }
+    } else {}
+
     if (age <21 && age >=18) {
       vegas -=4
-    } else {
-    }
+    } else {}
 
     // begin show results code
     if (florence >= fiji && florence >= vegas && florence >= pct && florence >= mars) {
