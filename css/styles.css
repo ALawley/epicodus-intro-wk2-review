@@ -48,3 +48,12 @@ h5 {
 hr {
   border: 1px solid black;
 }
+
+button.return {
+  align-self: center;
+  margin-top: 20px;
+  margin-left: 25%;
+  margin-right: 25%;
+  padding: 10px 25px 10px 25px;
+
+}
